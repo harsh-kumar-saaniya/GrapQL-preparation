@@ -11,6 +11,7 @@ type Mutation{
 
 type Query{
     getMessage: String
+    getName: String
 }
 `
 

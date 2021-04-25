@@ -2,9 +2,13 @@
 const resolver = {
     Query: {
         getMessage: () => {
-            return "Hello world"
+            return "Hello world!"
+        },
+        getName: () => {
+            return "Harish Kumar"
         }
     },
+
     Mutation: {
 
     }
