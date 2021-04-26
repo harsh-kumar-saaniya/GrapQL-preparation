@@ -8,11 +8,14 @@ const resolver = {
         },
         getName: () => {
             return "Harish Kumar"
+        },
+        getAllMessags: () => {
+            return [{ message: "test", id: "1235" }, { message: "test", id: "1235" }]
         }
     },
 
     Mutation: {
-        createMessage: (_, {input}) => {
+        createMessage: (_, { input }) => {
             console.log("inputs", input);
             let id = crypto.randomBytes(10).toString('hex')
             console.log("id", id)

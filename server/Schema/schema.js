@@ -3,6 +3,7 @@ const { gql } = require('apollo-server');
 const typeDef = gql`
 type messageType{
     message: String
+    id: ID
 }
 
 input messageInput{
@@ -16,6 +17,7 @@ type Mutation{
 type Query{
     getMessage: String
     getName: String
+    getAllMessags: [messageType]
 }
 `
 
